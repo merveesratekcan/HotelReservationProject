@@ -20,7 +20,7 @@ namespace HotelProject.WebApi.Controllers
         public IActionResult ServiceList()
         {
             var values = _serviceService.TGetList();
-            return Ok("Service List");
+            return Ok(values);
         }
 
         [HttpPost]
@@ -30,7 +30,7 @@ namespace HotelProject.WebApi.Controllers
             return Ok("Service Added");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteService(int id)
         {
             var values = _serviceService.TGetByID(id);

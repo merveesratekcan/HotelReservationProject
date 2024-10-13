@@ -3,6 +3,7 @@ using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,14 @@ builder.Services.AddScoped<IStaffService, StaffManager>();
 
 builder.Services.AddScoped<IRoomDal, EfRoomDal>();
 builder.Services.AddScoped<IRoomService, RoomManager>();
+//Automapper
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("OtelApiCors",
+        opts => opts.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
 
 
 builder.Services.AddControllers();
@@ -41,6 +50,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("OtelApiCors");
 
 app.UseAuthorization();
 
