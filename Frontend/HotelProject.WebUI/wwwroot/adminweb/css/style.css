@@ -62,35 +62,37 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #324cdd;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #ec0c38;
-  --orange: #fd7e14;
-  --yellow: #fa3a0e;
-  --green: #2dce89;
-  --teal: #00A9A2;
-  --cyan: #11cdef;
-  --white: #fff;
-  --gray: #f7fafc;
-  --gray-dark: #333333;
-  --primary: #7571f9;
-  --secondary: #9097c4;
-  --success: #6fd96f;
-  --info: #4d7cff;
-  --warning: #f29d56;
-  --danger: #ff5e5e;
-  --light: #f8f9fa;
-  --dark: #333333;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1400;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    --blue: #324cdd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #ec0c38;
+    --orange: #44ada8;
+    /*  --orange: #fd7e14;*/
+    --yellow: #fa3a0e;
+    --green: #2dce89;
+    --teal: #00A9A2;
+    --cyan: #11cdef;
+    --white: #fff;
+    --gray: #f7fafc;
+    --gray-dark: #333333;
+    --primary: #7571f9;
+    --secondary: #9097c4;
+    --success: #6fd96f;
+    --info: #4d7cff;
+    --warning: #f29d56;
+    --danger: #ff5e5e;
+    --light: #f8f9fa;
+    --dark: #333333;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
 *,
 *::before,
