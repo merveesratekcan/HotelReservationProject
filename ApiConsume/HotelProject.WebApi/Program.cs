@@ -25,6 +25,9 @@ builder.Services.AddScoped<IStaffService, StaffManager>();
 
 builder.Services.AddScoped<IRoomDal, EfRoomDal>();
 builder.Services.AddScoped<IRoomService, RoomManager>();
+
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+builder.Services.AddScoped<IAboutService, AboutManager>();
 //Automapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
