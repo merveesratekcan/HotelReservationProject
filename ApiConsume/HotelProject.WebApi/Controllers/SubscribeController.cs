@@ -20,7 +20,7 @@ namespace HotelProject.WebApi.Controllers
         public IActionResult SubscribeList()
         {
             var values = _subscribeService.TGetList();
-            return Ok("Subscribe List");
+            return Ok(values);
         }
 
         [HttpPost]
